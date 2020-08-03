@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_jQuery与Dom相互转化</title>
+    <script src="jQuery.min.js"></script>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+    }
+</style>
+<body>
+    <div></div>
+    <script>
+    var Mydiv=document.querySelector('div')
+    // Mydiv.style.display='none'
+
+        // 1.Dom转化jQuery
+        // $(Mydiv).hide()
+
+        //2.jQuery转化Dom
+        $('div')[0].style.display='none'
+        // $('div').get(0).style.display='none'
+    </script>
+</body>
+</html>

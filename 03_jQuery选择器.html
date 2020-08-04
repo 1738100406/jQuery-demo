@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_jQuery选择器</title>
+    <script src="jQuery.min.js"></script>
+</head>
+<body>
+    <div>多个里选一个</div>
+    <ul>
+        <li>多个里选一个</li>
+        <li>多个里选一个</li>
+        <li>多个里选一个</li>
+        <li>多个里选一个</li>
+    </ul>
+    <ol>
+        <li>多个里选一个</li>
+        <li>多个里选一个</li>
+        <li>多个里选一个</li>
+        <li>多个里选一个</li>
+    </ol>
+    <script>
+        $(function(){
+            :first
+// $('li:first') 获取第一个i元素
+// $('li:last')获取最后一个li元素
+// $("Ii:eq(2)")获取到的li元素中，选择索引号为2的元素,索引号index从0开始。
+
+// $("li:odd")获取到的Ii元素中，选择索引号为奇数的元素
+
+// $("li:even")获取到的Ii元素中，选择索引号为偶数的元素
+
+            $('ul li:first').css('background','red')
+            $('ul li:last').css('background','blue')
+            $('ul li:eq("2")').css('background','pink')
+
+            $('ol li:odd').css('background','green')
+            $('ol li:even').css('background','skyblue')
+        })
+    </script>
+</body>
+</html>

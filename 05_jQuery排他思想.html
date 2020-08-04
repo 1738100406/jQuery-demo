@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.min.js"></script>
+</head>
+<body>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <button>点我</button>
+    <script>
+        $(function(){//1.隐式迭代 给所有按钮添加绑定事件
+            $('button').click(function(){
+                //2.当前元素添加背景颜色
+                $(this).css('background','pink')
+                //3.处当前元素的兄弟取消背景 隐式迭代
+                $(this).siblings('button').css('background','')
+            })
+            
+        })
+    </script>
+</body>
+</html>

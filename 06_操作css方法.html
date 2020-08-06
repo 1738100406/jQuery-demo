@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.min.js"></script>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin: 150px auto;
+        transition: all .5s;
+    }
+    .current{
+        background-color: skyblue;
+        transform: rotate(360deg);
+    }
+</style>
+<body>
+    <div></div>
+    <script>
+
+        $(function(){
+            $('div').click(function(){
+            //    $(this).addClass('current')  添加类名
+            //    $(this).removeClass('current') 删除类名
+               $(this).toggleClass('current') //  切换类名
+            })
+        })
+    </script>
+</body>
+</html>

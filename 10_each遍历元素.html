@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_each遍历元素</title>
+    <script src="jQuery.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script>
+        var arr=["red","blue","pink"]
+        var sum=0
+        $(function(){
+        //1.$().each(function(i,ele){})
+            $("div").each(function(i,ele){
+                //回调函数的第一个参数是索引号 可以自定义
+                // console.log(i);
+                //回调函数的第一个参数是 dom元素对象 dom对象没有css方法 
+                // $(ele).css("color",arr[i])
+            })
+            $("div").each(function(i,ele){
+                sum+=parseInt($(ele).text())
+            })
+            console.log("￥"+sum);
+
+        //2.方法遍历元素 主要遍历数组 数据
+            $.each($("div"),function(i,ele){
+                console.log(ele);
+            })
+            $.each(arr,function(i,ele){
+               console.log(ele);
+               
+            })
+
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09_jQuery之属性操作</title>
+    <script src="jQuery.min.js"></script>
+</head>
+<body>
+    <a href="www.baidu.com"></a>
+    <div index></div>
+    <script>
+        // 1.prop 固有属性
+        // $("a").prop("href")
+        // $("a").prop("href","www.qq.com")
+
+        //2.attr 自定义属性
+        // $("a").attr("index")
+        // $("a").attr("index",2)
+
+        //3.data 数据缓存 里面的数据存放在内存中
+        $("a").data("name","andy")
+        console.log($("a").data("name"));
+        
+        
+    </script>
+</body>
+</html>
